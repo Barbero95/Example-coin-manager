@@ -1,5 +1,5 @@
-# Gestión de datos
+# Example-coin-manager
 
-- Scanear el ean de la bolsa de dinero e introducir su valor.
-- Persistencia usando Hive.
-- Genera un Excel con los datos almacenados.
+- Scan the ean of the money bag and enter its value. 
+- Persistence using Hive. 
+- Generates an Excel with the stored data.
