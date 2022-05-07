@@ -7,7 +7,7 @@ import 'package:excel/excel.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
-// import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
+import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:share_plus/share_plus.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -25,9 +25,8 @@ class _MyHomePageState extends State<MyHomePage> {
     String? barcodeScanRes;
     // Platform messages may fail, so we use a try/catch PlatformException.
     try {
-      // barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
-      //     '#ff6666', 'Cancel', true, ScanMode.BARCODE);
-      barcodeScanRes = "111";
+      barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
+          '#ff6666', 'Cancel', true, ScanMode.BARCODE);
     } catch (err) {
       // print(err);
       ScaffoldMessenger.of(context).showSnackBar(
